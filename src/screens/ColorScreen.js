@@ -5,7 +5,7 @@ const ColorScreen = () => {
   const [colors, setColors] = useState([]);
 
   return (
-    <View>
+    <View style={{ alignSelf: 'center' }}>
       <View style={styles.containerButtonStyle}>
         <Button 
           title="Add a Color" 
@@ -18,7 +18,7 @@ const ColorScreen = () => {
         data={colors}
         renderItem={({ item }) => {
           return (
-            <View style={{ height: 100, width: 100, backgroundColor: item }} />
+            <View style={{ height: 100, width: 100, backgroundColor: item, marginBottom: 5 }} />
           );
         }}
       />
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
     paddingTop: 30
   },
-  containerListStyle: {
+  containerListStylen: {
     alignSelf: "center",
   }
 });
